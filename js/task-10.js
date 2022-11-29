@@ -7,12 +7,12 @@ const buttonCreateEl = document.querySelector('button[data-create]');
 const buttonDestroyEl = document.querySelector('button[data-destroy]');
 const boxEl = document.querySelector('#boxes');
 
-buttonCreateEl.addEventListener('click', numAmount);
+buttonCreateEl.addEventListener('click', createBoxes);
 buttonDestroyEl.addEventListener('click', destroyBoxes);
 
 
 
-function numAmount() {
+function createBoxes() {
 
 const boxesArray = []; 
   const amount = inputEl.value; 
