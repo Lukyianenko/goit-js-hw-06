@@ -8,11 +8,11 @@ const buttonDestroyEl = document.querySelector('button[data-destroy]');
 const boxEl = document.querySelector('#boxes');
 
 buttonCreateEl.addEventListener('click', numAmount);
-buttonDestroyEl.addEventListener('click', onClear);
+buttonDestroyEl.addEventListener('click', destroyBoxes);
 
 
 
-function numAmount(event) {
+function numAmount() {
 
 const boxesArray = []; 
   const amount = inputEl.value; 
@@ -36,7 +36,7 @@ divs.classList.add('box1')
  boxEl.append(...boxesArray);
 }
 
-function onClear() {
+function destroyBoxes() {
   const boxDel = document.querySelectorAll('.box1');
   console.log(boxDel);
   for (let el of boxDel) {
