@@ -11,6 +11,7 @@ const btnEl = document.querySelector('.change-color');
 btnEl.addEventListener('click', onChangeColorBg);
 
 function onChangeColorBg() {
-  bodyEl.style.backgroundColor = getRandomHexColor();
-  spanEl.textContent = getRandomHexColor();
+  const colorNum = getRandomHexColor();
+  bodyEl.style.backgroundColor = colorNum;
+  spanEl.textContent = colorNum;
 }
